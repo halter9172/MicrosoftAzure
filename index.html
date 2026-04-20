@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Binary Notes Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="brand-group">
+          <div class="brand-logo">BN</div>
+          <div>
+            <p class="brand-title">Binary Notes</p>
+            <p class="brand-subtitle">Practice Dashboard</p>
+          </div>
+        </div>
+        <nav class="sidebar-nav">
+          <a href="#" class="nav-item active"><span class="nav-icon">🏠</span><span>Dashboard</span></a>
+          <a href="#" class="nav-item"><span class="nav-icon">📅</span><span>Practice Log</span></a>
+          <a href="#snippet-library" class="nav-item"><span class="nav-icon">📁</span><span>Snippet Library</span></a>
+          <a href="#" class="nav-item"><span class="nav-icon">📊</span><span>Analytics</span></a>
+          <a href="#" class="nav-item"><span class="nav-icon">🎯</span><span>Goals</span></a>
+          <a href="#" class="nav-item"><span class="nav-icon">👥</span><span>Community</span></a>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <a href="#" class="nav-item config-item"><span class="nav-icon">⚙️</span><span>Configuración</span></a>
+        <div class="sidebar-user">
+          <div class="avatar avatar-sm">AN</div>
+          <div>
+            <p class="user-name">User Name</p>
+            <p class="user-role">Practice Lead</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="dashboard">
+      <header class="dashboard-header">
+        <div>
+          <p class="section-overline">DASHBOARD: TECHNICAL PRACTICE & METRICS</p>
+          <h1>Binary Notes / Dashboard</h1>
+        </div>
+        <div class="header-actions">
+          <button class="primary-btn">+ Log New Practice Session</button>
+          <div class="avatar avatar-header">AN</div>
+        </div>
+      </header>
+
+      <section class="top-widgets">
+        <article class="card heatmap-card">
+          <div class="card-header">
+            <div>
+              <p class="card-eyebrow">SESSION HEATMAP</p>
+              <h2>Practice consistency</h2>
+            </div>
+            <button class="icon-btn">⋯</button>
+          </div>
+          <div class="heatmap-meta">
+            <div class="heatmap-axis-top">Jan Feb Mar Apr May Jun Jul Aug Sep</div>
+            <div class="heatmap-grid-wrapper">
+              <div class="heatmap-row"><span class="heat-label">Sep</span><div class="heatmap-line"><span class="heat-cell level-1"></span><span class="heat-cell level-1"></span><span class="heat-cell level-2"></span><span class="heat-cell level-3"></span><span class="heat-cell level-3"></span><span class="heat-cell level-2"></span><span class="heat-cell level-4"></span><span class="heat-cell level-3"></span></div></div>
+              <div class="heatmap-row"><span class="heat-label">Jul</span><div class="heatmap-line"><span class="heat-cell level-2"></span><span class="heat-cell level-3"></span><span class="heat-cell level-3"></span><span class="heat-cell level-4"></span><span class="heat-cell level-4"></span><span class="heat-cell level-3"></span><span class="heat-cell level-3"></span><span class="heat-cell level-2"></span></div></div>
+              <div class="heatmap-row"><span class="heat-label">May</span><div class="heatmap-line"><span class="heat-cell level-1"></span><span class="heat-cell level-2"></span><span class="heat-cell level-2"></span><span class="heat-cell level-3"></span><span class="heat-cell level-3"></span><span class="heat-cell level-2"></span><span class="heat-cell level-2"></span><span class="heat-cell level-1"></span></div></div>
+              <div class="heatmap-row"><span class="heat-label">Mar</span><div class="heatmap-line"><span class="heat-cell level-2"></span><span class="heat-cell level-3"></span><span class="heat-cell level-4"></span><span class="heat-cell level-4"></span><span class="heat-cell level-3"></span><span class="heat-cell level-3"></span><span class="heat-cell level-2"></span><span class="heat-cell level-3"></span></div></div>
+              <div class="heatmap-row"><span class="heat-label">Jan</span><div class="heatmap-line"><span class="heat-cell level-1"></span><span class="heat-cell level-2"></span><span class="heat-cell level-1"></span><span class="heat-cell level-2"></span><span class="heat-cell level-3"></span><span class="heat-cell level-2"></span><span class="heat-cell level-2"></span><span class="heat-cell level-1"></span></div></div>
+            </div>
+          </div>
+          <div class="heatmap-footer">
+            <span>Practice consistency</span>
+            <div class="heatmap-legend">
+              <span>Low</span>
+              <span class="heat-legend-box level-1"></span>
+              <span class="heat-legend-box level-2"></span>
+              <span class="heat-legend-box level-3"></span>
+              <span class="heat-legend-box level-4"></span>
+              <span>High</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card focus-card">
+          <div class="card-header">
+            <div>
+              <p class="card-eyebrow">FOCUS TRENDS (WEEKLY)</p>
+              <h2>Escalas · Repertorio · Técnica de arco</h2>
+            </div>
+            <button class="icon-btn">⋯</button>
+          </div>
+          <div class="chart-legend">
+            <span class="legend-item legend-scale">Escalas</span>
+            <span class="legend-item legend-rep">Repertorio</span>
+            <span class="legend-item legend-bow">Técnica de Arco</span>
+          </div>
+          <div class="line-chart-card">
+            <svg viewBox="0 0 320 180" class="line-chart" aria-hidden="true">
+              <g class="grid-lines">
+                <line x1="0" y1="20" x2="320" y2="20" />
+                <line x1="0" y1="60" x2="320" y2="60" />
+                <line x1="0" y1="100" x2="320" y2="100" />
+                <line x1="0" y1="140" x2="320" y2="140" />
+              </g>
+              <polyline points="10,130 65,110 120,95 175,80 230,70 285,50" class="line line-scale" />
+              <polyline points="10,140 65,125 120,115 175,105 230,95 285,80" class="line line-rep" />
+              <polyline points="10,150 65,130 120,115 175,100 230,90 285,75" class="line line-bow" />
+              <g class="axis-labels">
+                <text x="16" y="172">Dec 1</text>
+                <text x="75" y="172">Dec 2</text>
+                <text x="135" y="172">Dec 3</text>
+                <text x="190" y="172">Dec 4</text>
+                <text x="245" y="172">Dec 5</text>
+                <text x="300" y="172">Dec 6</text>
+              </g>
+            </svg>
+          </div>
+        </article>
+
+        <article class="card goals-card">
+          <div class="card-header">
+            <div>
+              <p class="card-eyebrow">GOALS PROGRESS</p>
+              <h2>Weekly practice hours</h2>
+            </div>
+            <button class="icon-btn">⋯</button>
+          </div>
+          <div class="goals-grid">
+            <div class="goal-ring">
+              <div class="goal-circle"><span>18</span></div>
+              <p>hours</p>
+              <p class="goal-meta">Weekly</p>
+            </div>
+            <div class="goal-ring">
+              <div class="goal-circle goal-circle-secondary"><span>10</span></div>
+              <p>hours</p>
+              <p class="goal-meta">Target</p>
+            </div>
+            <div class="goal-ring">
+              <div class="goal-circle goal-circle-muted"><span>00</span></div>
+              <p>goals</p>
+              <p class="goal-meta">Weekly</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="snippet-section" id="snippet-library">
+        <div class="section-header">
+          <div>
+            <p class="card-eyebrow">The Snippet Library</p>
+            <h2>Repositorio de fragmentos</h2>
+          </div>
+          <div class="table-controls">
+            <div class="search-wrapper">
+              <input id="table-search" type="search" placeholder="Search" />
+            </div>
+            <button class="secondary-btn">Filter</button>
+            <button class="secondary-btn">YAML/Code</button>
+          </div>
+        </div>
+        <div class="table-card card">
+          <table class="snippet-table">
+            <thead>
+              <tr>
+                <th><input type="checkbox" aria-label="Seleccionar todo" /></th>
+                <th>Snippet Name</th>
+                <th>Reference (Piece/Measure)</th>
+                <th>Technique Tags</th>
+                <th>Progress</th>
+                <th>Notes (YAML/Code)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" aria-label="Seleccionar" /></td>
+                <td>Beethoven Sonata No. 5 · Mvt 1</td>
+                <td>No. 5, Mvt 1, Bar 23-30</td>
+                <td><span class="tag">Bowing Dynamics</span><span class="tag">String Crossings</span></td>
+                <td><span class="badge status in-progress">In Progress</span></td>
+                <td><code># Watch bow speed;<br /># Maintain clear articulated rhythm.</code></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Seleccionar" /></td>
+                <td>Kreutzer Étude No. 2</td>
+                <td>Bar 2 ↑</td>
+                <td><span class="tag">Intonation</span><span class="tag">Shifting</span></td>
+                <td><span class="badge status backlog">Backlog</span></td>
+                <td><code># Focus on 4th finger placement;<br /># Avoid tension.</code></td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" aria-label="Seleccionar" /></td>
+                <td>Rachmaninoff Prelude Op. 3</td>
+                <td>Op. 3, No. 2, Bar 12-18</td>
+                <td><span class="tag">Double Stops</span><span class="tag">Dynamics</span></td>
+                <td><span class="badge status mastered">Mastered</span></td>
+                <td><code># Keep left hand relaxed;<br /># Shape phrase.</code></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="bottom-widgets">
+        <article class="card tuning-card">
+          <div class="card-header">
+            <div>
+              <p class="card-eyebrow">TUNING VISUALIZER</p>
+              <h2>Deviation · Last Session Average</h2>
+            </div>
+            <button class="icon-btn">⋯</button>
+          </div>
+          <div class="wave-visualizer">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+            <div class="wave-axis"></div>
+          </div>
+          <div class="visualizer-meta">
+            <span>Stable tuning</span>
+            <span class="meta-highlight">+4¢ deviation</span>
+          </div>
+        </article>
+
+        <article class="card precision-card">
+          <div class="card-header">
+            <div>
+              <p class="card-eyebrow">RHYTHMIC PRECISION</p>
+              <h2>Beat accuracy</h2>
+            </div>
+            <button class="icon-btn">⋯</button>
+          </div>
+          <div class="precision-grid">
+            <div class="precision-ring">
+              <div class="precision-circle"><span>70%</span></div>
+              <p>Last session</p>
+            </div>
+            <div class="precision-ring">
+              <div class="precision-circle precision-strong"><span>90%</span></div>
+              <p>Overall</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="card tempo-card">
+          <div class="card-header">
+            <div>
+              <p class="card-eyebrow">TEMPO CONSISTENCY</p>
+              <h2>Speed stability</h2>
+            </div>
+            <button class="icon-btn">⋯</button>
+          </div>
+          <div class="tempo-chart">
+            <svg viewBox="0 0 320 140" class="tempo-line" aria-hidden="true">
+              <polyline points="10,110 60,92 110,88 160,72 210,78 260,65 310,70" class="tempo-line-path" />
+            </svg>
+          </div>
+          <div class="tempo-meta">
+            <span>Target: 98 BPM</span>
+            <span class="meta-highlight">95.2% consistency</span>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
